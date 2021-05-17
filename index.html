@@ -135,21 +135,24 @@
 	</section>
 	<!----------------------------------------------------------------contact-form------------------------------------------------------------------------------->
 	<section id="contact-form">
-		<form>
-			<!--left--------------------------------------->
+		<form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="from_email@example.com"
+		action="https://script.google.com/macros/s/AKfycbwFwH1eUJGQNsE4uiCaCccRIQyvPEPSMioxA9m4rEe3xSnN4TYk6W0HZfs39j5m_4EY/exec">	
+				<!--left--------------------------------------->
 			<div class="contact-left">
 				<h1 class="c-l-heading">
 					<font style="border-bottom: 3px solid #1ED98B;">Writ</font>e us
 				</h1>
 				<!--name-------->
 				<div class="f-name">
-					<font>Name</font>
-					<input type="text" placeholder="Full Name" />
+					<label for="name">Name: </label>
+					<input id="name" name="name" placeholder="Full name" />
 				</div>
 				<!--email-------->
 				<div class="f-email">
-					<font>Email</font>
-					<input type="email" placeholder="Example@gmail.com" />
+
+					<label for="email"><em>Your</em> Email Address:</label>
+					<input id="email" name="email" type="email" value=""
+						   required placeholder="your.name@email.com" />
 				</div>
 				<br>
 				<!---------social---------------->
